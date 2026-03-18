@@ -2,14 +2,14 @@
 
 An IoT-based monitoring system designed to track indoor air safety and comfort levels.This project utilizes an analog gas sensor and a DHT11 sensor to provide instant feedback on air purity, temperature, and humidity.
 
-## 🚀 Features
+## Features
 
   **Real-time Air Quality Analysis:** Categorizes air quality from "Good" to "Toxic" based on gas concentration levels.
   **Climate Tracking:** Measures temperature in Celsius and Relative Humidity (RH) percentage.
   **OLED Visualization:** Displays data on a 128x64 SSD1306 OLED screen using custom fonts for better readability.
   **Serial Debugging:** Includes error handling for sensor failures via the Serial Monitor.
 
-## 🛠️ Hardware Requirements
+##  Hardware Requirements
 
   **Microcontroller:** Arduino (Uno, Nano, or Mega)
   **Display:** SSD1306 OLED (128x64)
@@ -18,7 +18,7 @@ An IoT-based monitoring system designed to track indoor air safety and comfort l
       DHT11 Temperature & Humidity Sensor 
   * **Connecting Wires & Breadboard**
 
-## 📂 Pin Mapping
+##  Pin Mapping
 
 | Component | Arduino Pin | Description |
 
@@ -27,7 +27,7 @@ An IoT-based monitoring system designed to track indoor air safety and comfort l
 | **OLED SDA** | `A4` (SDA) |I2C Data (standard for Uno) |
 | **OLED SCL** | `A5` (SCL) |I2C Clock (standard for Uno) |
 
-## 📊 Air Quality Thresholds
+##  Air Quality Thresholds
 
 The system evaluates the `gasLevel` (analog reading) using the following logic:
 
@@ -37,7 +37,7 @@ The system evaluates the `gasLevel` (analog reading) using the following logic:
 **300 - 349:** ur dead\! (High Danger)
 **\> 350:** Toxic
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 1.  **Install Libraries:** Ensure you have the following libraries installed in your Arduino IDE:
       `Adafruit_GFX` 
